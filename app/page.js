@@ -198,7 +198,7 @@ export default function Home() {
                 <StarIcon className="text-yellow-400 w-5 h-5 " />
               </div>
               <p className="italic mb-4">
-                Luxurious Level transformed our hotel's climate control. The attention to detail and quality of service was impeccable.
+                Luxurious Level transformed our hotel&apos;s climate control. The attention to detail and quality of service was impeccable.
               </p>
               <p className="font-semibold">
                 - Sarah Johnson, General Manager at Grand Luxe Hotel
@@ -215,7 +215,7 @@ export default function Home() {
                 <StarIcon className="text-yellow-400 w-5 h-5 fill-current" />
               </div>
               <p className="italic mb-4">
-                The energy efficiency and comfort levels in our office tower have significantly improved thanks to Luxurious Level's innovative solutions.
+                The energy efficiency and comfort levels in our office tower have significantly improved thanks to Luxurious Level&apos;s innovative solutions.
               </p>
               <p className="font-semibold">
                 - Michael Chen, Facilities Director at Prestige Tower
