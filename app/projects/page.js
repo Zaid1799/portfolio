@@ -51,7 +51,6 @@ export default function ProjectsPage() {
       images: Array.from({ length: 19 }, (_, i) => `/img/projects/ac/ac${i + 1}.jpeg`),
     },
   ];
-  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -71,7 +70,7 @@ export default function ProjectsPage() {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [projects])
 
   return (
     <div className={`min-h-screen bg-background text-foreground ${language === 'ar' ? 'rtl' : 'ltr'}`}>

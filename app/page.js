@@ -87,7 +87,6 @@ export default function Home() {
     { name: "Point Comfort", industry: "Medical Products", project: "Luxury medical sleep products air conditioning", logo: "/img/companys/point.png" },
   ];
 
-
   useEffect(() => {
     const carousel = carouselRef.current
     let animationId
@@ -137,7 +136,7 @@ export default function Home() {
       <section className="py-20 px-4 text-center bg-black text-white">
         <div className="max-w-4xl mx-auto">
           <Image
-            src='/img/logo.png'
+            src="/img/logo.png"
             alt="Luxurious Level Logo"
             width={300}
             height={100}
@@ -172,7 +171,13 @@ export default function Home() {
           {clients.map((client) => (
             <Card key={client.name} className="flex-shrink-0 w-64 bg-white">
               <CardHeader className="flex items-center justify-center h-40">
-                <img src={client.logo} alt={`${client.name} logo`} className="max-w-full max-h-full object-contain" />
+                <Image
+                  src={client.logo}
+                  alt={`${client.name} logo`}
+                  width={200}
+                  height={100}
+                  className="max-w-full max-h-full object-contain"
+                />
               </CardHeader>
               <CardContent className="text-center">
                 <CardTitle className="text-lg mb-2">{client.name}</CardTitle>
@@ -195,7 +200,7 @@ export default function Home() {
                 <StarIcon className="text-yellow-400 w-5 h-5 fill-current" />
                 <StarIcon className="text-yellow-400 w-5 h-5 fill-current" />
                 <StarIcon className="text-yellow-400 w-5 h-5 fill-current" />
-                <StarIcon className="text-yellow-400 w-5 h-5 " />
+                <StarIcon className="text-yellow-400 w-5 h-5 fill-current" />
               </div>
               <p className="italic mb-4">
                 Luxurious Level transformed our hotel&apos;s climate control. The attention to detail and quality of service was impeccable.
@@ -224,8 +229,6 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
-
 
       {/* Why Choose Us Section */}
       <section className="py-16 px-4 bg-gray-100">
